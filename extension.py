@@ -51,7 +51,6 @@ class Extension():
 
 		#init whitelist flag
 		whitelistedSearch = self.extensionID if self.extensionID != None else self.path
-		print "-> self.isWhitelisted self.extensionID: %s whitelistedSearch: %s" % (self.extensionID, whitelistedSearch)
 		self.isWhitelisted = (whitelistedSearch in whitelist.whitelistedExtensions)
 
 		return
